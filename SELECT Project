@@ -1,0 +1,23 @@
+CREATE TABLE nike (id TEXT PRIMARY KEY, shoe TEXT, price INTEGER, color TEXT, sport TEXT);
+
+INSERT INTO nike VALUES (1, 'DUNKS', 7, 'Blue', 'Football');
+INSERT INTO nike VALUES (2, 'NOVA', 11, 'Red', 'Basketball');
+INSERT INTO nike VALUES (3, 'MAMBAS', 10, 'Green', 'Soccer');
+INSERT INTO nike VALUES (4, 'UNIVERSITY RED', 3, 'Yellow', 'Golf');
+INSERT INTO nike VALUES (5, 'FLIGHTS', 2, 'Purple', 'Tennis');
+INSERT INTO nike VALUES (6, 'BREADS', 17, 'Indigo', 'Football');
+INSERT INTO nike VALUES (7, 'NOVA 2', 13, 'Red', 'Basketball');
+INSERT INTO nike VALUES (8, 'MAMBAS 2', 27, 'Green', 'Soccer');
+INSERT INTO nike VALUES (9, 'UNIVERSITY RED 2', 33, 'Yellow', 'Golf');
+INSERT INTO nike VALUES (10, 'FLIGHTS 2', 22, 'Purple', 'Tennis');
+INSERT INTO nike VALUES (11, 'DUNKS UNLIMITED', 37, 'Blue', 'Football');
+INSERT INTO nike VALUES (12, 'NOVA SPACE', 31, 'Red', 'Basketball');
+INSERT INTO nike VALUES (13, 'MAMBAS LIMITED', 19, 'Green', 'Soccer');
+INSERT INTO nike VALUES (14, 'UNIVERSITY RED LIMITED', 13, 'Yellow', 'Golf');
+INSERT INTO nike VALUES (15, 'FLIGHTS SPACE', 25, 'Purple', 'Tennis');
+
+SELECT AVG(price) 
+FROM nike;
+
+SELECT * 
+FROM nike ORDER BY price;
