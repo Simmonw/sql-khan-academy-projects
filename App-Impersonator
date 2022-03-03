@@ -1,0 +1,33 @@
+CREATE TABLE instagram (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT,
+followers INTEGER,
+likes INTEGER);
+
+INSERT INTO instagram (name, followers, likes)
+VALUES ('Cool_Kid', 200, 2000);
+
+INSERT INTO instagram (name, followers, likes)
+VALUES ('Fly_Guy', 500, 7000);
+
+INSERT INTO instagram (name, followers, likes)
+VALUES ('Sweet_Girl', 150, 150000);
+
+INSERT INTO instagram (name, followers, likes)
+VALUES ('Dog_Lover', 9000, 20000000);
+
+SELECT * 
+FROM instagram;
+
+UPDATE instagram 
+SET followers = 1200
+WHERE id = 1;
+
+SELECT * 
+FROM instagram;
+
+DELETE FROM instagram
+WHERE id = 4;
+
+SELECT *
+FROM instagram;
